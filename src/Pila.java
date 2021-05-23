@@ -2,11 +2,8 @@ import java.util.Stack;
 
 public class Pila extends Stack<Mesada>{
 
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = 1L;
-	//private static final int masGrande = 1;
+	
 	private static final int mesadaMasGrande = -1;
 	private static final int dispar = -2;
 	
@@ -35,32 +32,9 @@ public class Pila extends Stack<Mesada>{
 			this.devolverElementos(aux);
 			return false;
 		}
+		
 		this.push(m);
 		this.devolverElementos(aux);
-		
-//		if(res >= 0)
-//		{
-//			this.push(m);
-//			this.devolverElementos(aux);
-//		}
-//		else
-//		{
-//			mesadaPila = aux.peek();
-//			if((res = m.compareTo(mesadaPila)) < 0)
-//			{
-//				mesadaPila.rotar();
-//				if((res = m.compareTo(mesadaPila)) < 0)
-//				{
-//					this.devolverElementos(aux);
-//				}
-//			}
-//			else
-//			{
-//				this.push(m);
-//				this.devolverElementos(aux);
-//				res = 1;
-//			}
-//		}
 		
 		return true;
 	}
